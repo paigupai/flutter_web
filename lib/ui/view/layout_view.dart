@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../component/animated_wave_background.dart';
+import '../component/time_card.dart';
 import '../screens/home/Laboratory.dart';
 
 class SiteLayout extends StatelessWidget {
@@ -26,6 +27,7 @@ class SiteLayout extends StatelessWidget {
                     // });
                   },
                   labelType: NavigationRailLabelType.selected,
+                  elevation: 2,
                   destinations: const [
                     NavigationRailDestination(
                       icon: Icon(Icons.home_outlined),
@@ -43,6 +45,7 @@ class SiteLayout extends StatelessWidget {
                       label: Text('Third'),
                     ),
                   ],
+                  trailing: const TimeCard(),
                 ),
                 const Expanded(
                   child: Laboratory(),
